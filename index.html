@@ -23,23 +23,24 @@
           <h1 style="margin-bottom: 0px;">ShipInClick</h1>
           <h3 style="color:#fff;text-align: center;">Print Shipping Labels Online</h3>
           <h2 class="subtitle">Our website is under construction. Stay tuned for something amazing!</h2>
-          <div id="countdown"></div>
-          <form class="form-inline signup" role="form" method="post">
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" placeholder="Enter your email address" required>
-            </div>
-            <button type="submit" class="btn btn-theme">Get notified!</button>
+          <div id="countdown" style="font-size: 4rem;"></div>
+          <form class="signup" role="form" method="post" style="">
+            <div class="input-group" style="margin: 0 auto;">
+                 <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required style="width: auto !important;">
+                 <button class="btn btn-danger btn-lg" type="submit">Get notified!</button>
+              </div>
           </form>
 
-          <div class="social">
-            <a href="https://twitter.com/ShipInClick" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
           <p class="copyright">&copy; ShipInClick.com - All Rights Reserved</p>
+
+          <div class="social">
+            <a href="https://twitter.com/ShipInClick" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -49,9 +50,19 @@
   <script src="assets/js/jquery.countdown.min.js"></script>
   <script type="text/javascript">
     $('#countdown').countdown('2018/06/01', function(event) {
-      $(this).html(event.strftime('%w weeks<br />%d days <br /> %H:%M:%S'));
+      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
     });
   </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117898398-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117898398-1');
+</script>
+
 </body>
 
 </html>
